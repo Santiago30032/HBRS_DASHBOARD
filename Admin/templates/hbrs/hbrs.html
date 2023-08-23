@@ -11,7 +11,7 @@
         <link href="{% static 'libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet" type="text/css" />     
 {% endblock extra_css %}
 {% block content %}
-
+                <div id="data-container" data-data="{{ data_json }}"></div>
                 <div class="page-content">
                     <div class="container-fluid">
 
@@ -90,4 +90,5 @@
 
         <!-- Datatable init js -->
         <script src="{% static 'js/pages/datatables.init.js' %}"></script>
+
 {% endblock extra_javascript %}

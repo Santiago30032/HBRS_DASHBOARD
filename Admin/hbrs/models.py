@@ -1,6 +1,8 @@
 from django.db import models
 
+
 # Create your models here.
+
 class Models_data(models.Model):
     id = models.CharField(max_length=300, db_column='id', primary_key=True)
     hora = models.CharField(max_length=300,db_column='hora')
