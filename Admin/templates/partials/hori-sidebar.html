@@ -26,14 +26,14 @@
                                     </a>
                                 </li>
 
-                                <li class="nav-item dropdown">
+                                {% comment %} <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-uielement" role="button">
                                         <i class="mdi mdi-briefcase-variant-outline me-2"></i>UI Elements <div class="arrow-down"></div>
                                     </a>
 
                                     <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-xl"
                                         aria-labelledby="topnav-uielement">
-                                        <div class="row">
+                                        {% comment %} <div class="row">
                                             <div class="col-lg-4">
                                                 <div>
                                                     <a href="{% url 'ui-alerts' %}" class="dropdown-item">Alerts</a>
@@ -45,8 +45,8 @@
                                                     <a href="{% url 'ui-dropdowns' %}" class="dropdown-item">Dropdowns</a>
                                                     <a href="{% url 'ui-grid' %}" class="dropdown-item">Grid</a>
                                                 </div>
-                                            </div>
-                                            <div class="col-lg-4">
+                                            </div> {% endcomment %}
+                                            {% comment %} <div class="col-lg-4">
                                                 <div>
                                                     <a href="{% url 'ui-images' %}" class="dropdown-item">Images</a>
                                                     <a href="{% url 'ui-lightbox' %}" class="dropdown-item">Lightbox</a>
@@ -57,8 +57,8 @@
                                                     <a href="{% url 'ui-pagination' %}" class="dropdown-item">Pagination</a>
                                                     <a href="{% url 'ui-placeholders' %}" class="dropdown-item">Placeholders</a>
                                                 </div>
-                                            </div>
-                                            <div class="col-lg-4">
+                                            </div> {% endcomment %}
+                                            {% comment %} <div class="col-lg-4">
                                                 <div>
                                                     <a href="{% url 'ui-progressbars' %}" class="dropdown-item">Progress Bars</a>
                                                     <a href="{% url 'ui-sweetalert' %}" class="dropdown-item">Sweetalert 2</a>
@@ -69,11 +69,11 @@
                                                     <a href="{% url 'ui-popover-tooltips' %}" class="dropdown-item">Popovers &amp; Tooltips</a>
                                                     <a href="{% url 'ui-rating' %}" class="dropdown-item">Rating</a>
                                                 </div>
-                                            </div>
+                                            </div> {% endcomment %}
                                         </div>
                                     </div>
                                 </li>
-
+{% comment %}
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps" role="button">
                                         <i class="ri-apps-2-line me-2"></i>Apps <div class="arrow-down"></div>
@@ -200,9 +200,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </li> {% endcomment %}
 
-                                <li class="nav-item dropdown">
+                                {% comment %} <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-layout" role="button">
                                         <i class="ri-layout-3-line me-2"></i><span>Layouts</span>
                                         <div class="arrow-down"></div>
@@ -233,7 +233,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li>
+                                </li> {% endcomment %}
                             </ul>
                         </div>
                     </nav>

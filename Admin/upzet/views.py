@@ -4,7 +4,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from allauth.account.views import PasswordSetView,PasswordChangeView
 from django.urls import reverse_lazy
 from django_otp.plugins.otp_totp.models import TOTPDevice
-from django.http import JsonResponse
+
 
 
 

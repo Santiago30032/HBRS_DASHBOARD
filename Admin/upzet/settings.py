@@ -59,9 +59,9 @@ INSTALLED_APPS = [
     'crispy_forms',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
-    'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount',
+    # 'allauth.socialaccount.providers.google',
+    # 'allauth.socialaccount.providers.facebook',
 
     # Configure the django-otp package.
     'django_otp',
@@ -220,10 +220,11 @@ ACCOUNT_FORMS = {
     'reset_password_from_key': 'upzet.forms.PasswordResetKeyForm',
 }
 
-# SMTP Configure
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'santiago.diaz@b1gdigital.com'
-EMAIL_HOST_PASSWORD = 'frontend123'
+# # SMTP Configure
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+ACCOUNT_EMAIL_VERIFICATION = "none"
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'santiago.diaz@b1gdigital.com'
+# EMAIL_HOST_PASSWORD = 'frontend123'

@@ -22,7 +22,6 @@ urlpatterns = [
     path('', views.Index.as_view(),name="dashboard"),
     path('calendar', views.Calendar.as_view(),name="calendar"),
     path('settings',views.Settings.as_view(),name='settings'),
-    # path('datatest/', include('upzet.urls')),
     # Email
     path('email/',include('e_mail.urls')),
     # Pages

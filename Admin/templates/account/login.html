@@ -1,7 +1,7 @@
 {% extends 'account/base.html' %}
 {% load static %}
 {% load crispy_forms_tags %}
-{% load socialaccount %}
+{% comment %} {% load socialaccount %} {% endcomment %}
 {% block title %}Login{% endblock title %}
 {% block content %}
     
@@ -33,14 +33,14 @@
                                             
                                             <ul class="list-inline">
                                                 <li class="list-inline-item">
-                                                    <a href="{% provider_login_url 'google' %}" class="social-list-item bg-danger text-white border-danger font-size-20">
+                                                    {% comment %} <a href="{% provider_login_url 'google' %}" class="social-list-item bg-danger text-white border-danger font-size-20">
                                                         <i class="mdi mdi-google"></i>
-                                                    </a>
+                                                    </a> {% endcomment %}
                                                 </li>
                                                 <li class="list-inline-item">
-                                                    <a href="{% provider_login_url 'facebook' %}" class="social-list-item bg-info text-white border-primary font-size-20">
+                                                    {% comment %} <a href="{% provider_login_url 'facebook' %}" class="social-list-item bg-info text-white border-primary font-size-20">
                                                         <i class="mdi mdi-facebook"></i>
-                                                    </a>
+                                                    </a> {% endcomment %}
                                                 </li>
                                             </ul>
                                         </div>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="mt-5 text-center">
                             <p class="text-white-50">Don't have an account ? <a href="{% url 'account_signup' %}" class="fw-medium text-primary"> Register </a> </p>
-                            <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> Upzet. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesdesign</p>
+                            <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> HBRS SERVICE <i class="mdi mdi-heart text-danger"></i> by B1G DIGITAL</p>
                         </div>
                     </div>
                 </div>

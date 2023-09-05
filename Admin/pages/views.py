@@ -14,6 +14,7 @@ class AuthRegister(LoginRequiredMixin,TemplateView):
     template_name = "pages/authentication/auth-register.html"
 class AuthRecoverpw(LoginRequiredMixin,TemplateView):
     template_name = "pages/authentication/auth-recoverpw.html"
+    
 # Pages
 class Error404(LoginRequiredMixin,TemplateView):
     template_name = "pages/utility/pages-404.html"
